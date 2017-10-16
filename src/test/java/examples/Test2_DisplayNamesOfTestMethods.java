@@ -2,6 +2,7 @@ package examples;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInfo;
 
 @DisplayName("To Demonstrate the use of @DisplayName to display alternate/full name of Classes/Methods")
 public class Test2_DisplayNamesOfTestMethods
@@ -15,7 +16,7 @@ public class Test2_DisplayNamesOfTestMethods
 
     @DisplayName("Test 2")
     @Test
-    public void randomName()
+    public void randomName(TestInfo info)
     {
         System.out.println("To demonstrate the Use of @DisplayName  at Class/Method level");
     }
